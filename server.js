@@ -11,11 +11,13 @@ const init = async () => {
   await server.register(require('inert'));
 
   server.route({
-    method: 'GET',
-    path: '/',
-    handler: (request, h) => {
-      return h.file('./public/index.html');
-    }
+      method: 'GET',
+      path: '/{param*}',
+      handler: {
+          directory: {
+              path: 'public'
+          }
+      }
   });
 
   await server.start();
