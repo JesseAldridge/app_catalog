@@ -1,0 +1,28 @@
+[debug] [2018-09-25T16:15:57.602Z] ----------------------------------------------------------------------
+[debug] [2018-09-25T16:15:57.605Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-09-25T16:15:57.605Z] CLI Version:   4.2.1
+[debug] [2018-09-25T16:15:57.605Z] Platform:      darwin
+[debug] [2018-09-25T16:15:57.605Z] Node Version:  v10.10.0
+[debug] [2018-09-25T16:15:57.606Z] Time:          Tue Sep 25 2018 09:15:57 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-09-25T16:15:57.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-25T16:15:57.623Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-25T16:15:57.623Z] > authorizing via signed-in user
+[debug] [2018-09-25T16:15:57.625Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-25T16:15:57.625Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-25T16:15:59.085Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-25T16:15:59.106Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hello-firebase-1d744  
+ 
+[debug] [2018-09-25T16:15:59.539Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-25T16:15:59.540Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hello-firebase-1d744  
+ 
+[debug] [2018-09-25T16:16:00.178Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Jesse/Dropbox/app_catalog/apps/firebase_hello'...
+[info] 
+[debug] [2018-09-25T16:16:00.182Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/286833947274/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-25T16:16:00.818Z] <<< HTTP RESPONSE 200
+[info] i  hosting[hello-firebase-1d744]: Serving hosting files from: public
+[info] ✔  hosting[hello-firebase-1d744]: Local server: http://localhost:5000
