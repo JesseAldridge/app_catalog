@@ -1,0 +1,129 @@
+What is the purpose?
+I want to have a catalog of applications.
+Each application will be hosted.
+Each application will be open source.
+Non technical people will be able to look through the collection.
+They will be able to find functionality close to what they want.
+They will use that as a starting point.
+Possibly in the future this catalog will be an interface for describing the software you want.
+And then the app could search for code modules that satisfy that expectation.
+
+Does something else have higher priority?
+No
+
+What is the first step?  second?
+Build a simple list of web apps
+Build each simple web app in the list
+
+How are you going to test this?
+Will use it myself
+
+How is this going to work in production?
+Users will have some vague idea of an application they want built.
+They will search for it in the catalog.
+They will click a button to host it as-is.
+Or they will download the code.
+If they don't know how to code they would need to hand off to a developer at this point.
+Maybe I could be that developer.
+
+How can we divide up the work?
+I can do it
+
+What are the input formats?
+http requests
+
+What are the output formats?
+a list of apps
+along with a description
+and maybe a gif or a screenshot
+hosted apps in the cloud
+downloadable source code
+
+Is this change going to break existing processes?
+no existing process
+
+Is there an easier way?  (avoid coding)
+There are existing app catalogs... can I use those?
+Dentist -- non technical users can't use that
+Hire a developer -- expensive
+
+Is it worth it?
+Will potentially allow non technical people to get started writing code
+So yeah maybe
+
+Can I adapt something that already exists?
+Doing that by finding open source code snippets
+
+Do I have enough time to see it through to completion?
+Yeah
+
+Can I preempt any blockers?
+No blockers
+
+Is there anyone I can ask for advice?
+Talk to Heberth
+Will anyone actually use this?
+Will probably have to start by consulting
+Upwork?
+Startup School board?
+
+What are the risks?
+No one wants it
+Who would want a collection of barely useful software?
+Talk to Alan
+Build for myself at first
+
+How can we track usage?
+nodejs logs
+
+Make sure everyone knows what they are doing
+just me
+
+How are we going to integrate with other systems?
+host each app myself
+other than that it's just a simple web page
+
+Are there concurrency issues?
+not that i can think of
+
+How could this be done faster?
+could pay someone to build it
+lame and expensive
+
+Do you know what all the terms mean?
+yeah
+
+What are the edge cases?
+will discover that as I add more functionality
+
+Can you enable ops to drive the content?
+no ops
+
+Are any significant events coming up?
+not really
+
+Get design reviewed
+no one to review
+
+Is product ok with the plan?
+no product team
+
+Create a diagram
+done
+
+Are we following the spec exactly?
+no spec
+
+Do I have a fast feedback loop?
+yeah
+
+Is anyone else working on the same thing?
+no
+
+Is this legal?
+yes
+
+Metric?
+revenue
+will want people to pay for software
+pay packages as well as free packages
