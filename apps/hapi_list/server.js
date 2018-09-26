@@ -1,6 +1,7 @@
 'use strict';
 
 const Hapi = require('hapi');
+const Mustache = require('mustache');
 
 const server = Hapi.server({
   port: 80,
@@ -14,7 +15,26 @@ const init = async () => {
     method: 'GET',
     path: '/',
     handler: (request, h) => {
-      return h.file('./public/hello.html');
+      const docs = [
+        {
+          title: "Men Walk on Moon",
+          upvotes: 10,
+          downvotes: 3
+        },
+        {
+          title: "Nixon Resigns",
+          upvotes: 9,
+          downvotes: 5
+        }
+      ]
+
+      const template_str = `
+      {{#doc}}
+        <div><b>{{title}}</b><span style="margin: 5px">{{upvotes}}/{{downvotes}}<span></div>
+      {{/doc}}
+      `;
+
+      return Mustache.render(template_str, {doc: docs});
     }
   });
 
