@@ -26,3 +26,4 @@
 [debug] [2018-09-25T16:16:00.818Z] <<< HTTP RESPONSE 200
 [info] i  hosting[hello-firebase-1d744]: Serving hosting files from: public
 [info] ✔  hosting[hello-firebase-1d744]: Local server: http://localhost:5000
+[info] Shutting down...
