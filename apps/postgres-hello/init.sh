@@ -1,2 +1,2 @@
-createdb $1
+createdb hello-postgres
 psql
