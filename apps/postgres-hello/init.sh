@@ -1,1 +1,2 @@
 createdb hello-postgres
+psql
