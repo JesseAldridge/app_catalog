@@ -26,19 +26,29 @@ const init = async () => {
       const promise = new Promise((resolve, reject) => {
         Admin.database().ref('documents').once('value', snapshot => {
           const template_str = `
-          <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
 
           <style>
+            body { font-family: Helvetica }
             .wrapper { margin: 5px }
-            .post { margin: 5px }
+            .post { margin: 12px }
+            button { border-radius: 3px }
+            .panel { display: inline-block; text-align: center }
+            .title { vertical-align: 100% }
+            .vote-count { font-size: 80%; color: #888 }
           </style>
 
           <div class='wrapper'>
             {{#doc}}
               <div class='post'>
-                <button>🌯</button>
-                <button>🌮</button>
-                <b>{{title}}</b><span style="margin: 5px">{{upvotes}}/{{downvotes}}<span>
+                <div class='panel'>
+                  <button>👍</button>
+                  <div class='vote-count'>{{upvotes}}</div>
+                </div>
+                <div class='panel'>
+                  <button>👎</button>
+                  <div class='vote-count'>{{downvotes}}</div>
+                </div>
+                <span class='title'>{{title}}</span>
               </div>
             {{/doc}}
           </div>
