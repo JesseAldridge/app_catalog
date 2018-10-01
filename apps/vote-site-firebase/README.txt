@@ -1,3 +1,7 @@
+`npm init`
+
+-----
+
 Create new app in firebase console
 
 Admin SDK Docs: https://firebase.google.com/docs/admin/setup

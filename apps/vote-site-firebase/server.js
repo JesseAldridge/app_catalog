@@ -26,7 +26,6 @@ const init = async () => {
       const promise = new Promise((resolve, reject) => {
         Admin.database().ref('documents').once('value', snapshot => {
           const template_str = `
-
           <style>
             body { font-family: Helvetica }
             .wrapper { margin: 5px }
